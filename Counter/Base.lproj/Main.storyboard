@@ -16,17 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" scrollEnabled="NO" editable="NO" text="История изменений" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuQ-Os-zLX">
-                                <rect key="frame" x="13" y="82" width="367" height="481"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98186905689265258" green="0.98640179266948946" blue="1" alpha="0.094573767006802714" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="1" alpha="0.87167835884353739" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvj-G6-CoB">
-                                <rect key="frame" x="16" y="550" width="367" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdZ-zJ-iSw">
+                                <rect key="frame" x="16" y="79" width="361" height="464"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" scrollEnabled="NO" editable="NO" text="История изменений" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuQ-Os-zLX">
+                                        <rect key="frame" x="-1" y="-1" width="362" height="465"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.98186905689265258" green="0.98640179266948946" blue="1" alpha="0.094573767006802714" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="1" alpha="0.87167835884353739" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QdZ-zJ-iSw" secondAttribute="height" multiplier="361:464" id="F7E-Xd-44T"/>
+                                    <constraint firstAttribute="width" constant="361" id="bsa-Pg-TG3"/>
+                                    <constraint firstAttribute="height" constant="464" id="sho-G9-1jI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvj-G6-CoB">
+                                <rect key="frame" x="13" y="548" width="367" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счётчика:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7E-a7-B8N">
                                         <rect key="frame" x="10" y="50" width="214" height="27"/>
@@ -44,10 +54,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="362" id="SaL-s0-Luy"/>
+                                    <constraint firstAttribute="width" constant="367" id="Yme-3Q-man"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="a8i-Us-l0z"/>
+                                    <constraint firstAttribute="height" constant="128" id="iW2-0f-V92"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgS-6c-VeP">
-                                <rect key="frame" x="13" y="656" width="367" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgS-6c-VeP">
+                                <rect key="frame" x="13" y="660" width="367" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhT-5M-1zu">
                                         <rect key="frame" x="8" y="19" width="95" height="95"/>
@@ -98,10 +113,23 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="367" id="ROE-i8-kuy"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QdZ-zJ-iSw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="AuH-vV-fJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bgS-6c-VeP" secondAttribute="bottom" constant="30" id="JMd-A7-Ipt"/>
+                            <constraint firstItem="bgS-6c-VeP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="660" id="MpB-i2-Ejy"/>
+                            <constraint firstItem="QdZ-zJ-iSw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QAu-jR-AB7"/>
+                            <constraint firstItem="lvj-G6-CoB" firstAttribute="top" secondItem="QdZ-zJ-iSw" secondAttribute="bottom" constant="500" id="Xci-xM-OnZ"/>
+                            <constraint firstItem="lvj-G6-CoB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iV1-WA-sxC"/>
+                            <constraint firstItem="lvj-G6-CoB" firstAttribute="top" secondItem="QdZ-zJ-iSw" secondAttribute="bottom" constant="5" id="n1w-JN-9WY"/>
+                            <constraint firstItem="bgS-6c-VeP" firstAttribute="leading" secondItem="lvj-G6-CoB" secondAttribute="leading" id="tyS-iw-sxT"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="0v4-Cd-Ab1" id="Yuu-tK-GxD"/>
